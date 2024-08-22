@@ -47,7 +47,7 @@ def paleta_derecha_down():
         right_padel.sety(y -20)
 ```
 
-### Colicion de bola con las palas
+### Colision de bola con las palas
 
 ```python
 #  # Creamos el rebote en las paletas

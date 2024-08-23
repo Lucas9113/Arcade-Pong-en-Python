@@ -15,10 +15,10 @@
 
 
 
-##Algunos fragmentos que encontraremos en el codigo
+Algunos fragmentos que encontraremos en el codigo
 
 
-##Movimientos de las paletas
+Movimientos de las paletas
 
 ```python
 def paleta_izquierda_up():
@@ -47,7 +47,7 @@ def paleta_derecha_down():
         right_padel.sety(y -20)
 ```
 
-### Colision de bola con las palas
+Colision de bola con las palas
 
 ```python
 #  # Creamos el rebote en las paletas

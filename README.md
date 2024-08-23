@@ -15,10 +15,10 @@
 
 
 
-###Algunos fragmentos que encontraremos en el codigo
+##Algunos fragmentos que encontraremos en el codigo
 
 
-###Movimientos de las paletas
+##Movimientos de las paletas
 
 ```python
 def paleta_izquierda_up():

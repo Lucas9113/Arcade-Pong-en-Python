@@ -9,7 +9,7 @@
  - **Importacion de los modulos: turtle, random, windsound**
  - **Identificacion de ganador**
  - **Efectos de sonido en los golpes como en las anotaciones**
- - **Boton de pausa y salida **
+ - Boton de pausa y salida 
 
 
 
@@ -64,6 +64,6 @@ if ball.xcor() < -390 and left_padel.ycor() - 60 < ball.ycor() < left_padel.ycor
 
 Espero que ayude al que nesecite una ayuda/guia como asi tambien me digan si hay algo que corrgir para que quede mejor.
 
-####Saludos!
+Saludos!
 
-###End
+

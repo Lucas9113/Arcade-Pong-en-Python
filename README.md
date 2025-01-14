@@ -1,69 +1,69 @@
-### Mi primer proyecto Python: Arcade pong
+# Mi Primer Proyecto en Python: Arcade Pong 🕹️  
 
- Hola buenas a todos! Mi nombre es Lucas!!
- 
- **Este es mi primero proyecto subido a Gthub, el cual se trata de script del clasico juego arcade pong.**
- 
- Como bien dije antes este es mi primer proyecto subido a GitHub y me encuentro actualmente realizando un master en programacion.
- En este script algo de lo que podemos encontrar es:
- - **Importacion de los modulos: turtle, random, windsound**
- - **Identificacion de ganador**
- - **Efectos de sonido en los golpes como en las anotaciones**
- - Boton de pausa y salida 
+¡Hola a todos!  
+Mi nombre es **Lucas**, y este es mi primer proyecto subido a GitHub. 🎉  
 
+Se trata de una versión del clásico juego arcade **Pong**, implementada en Python. Este proyecto forma parte de mi aprendizaje mientras realizo un máster en programación.  
 
+---
 
+## Descripción del Proyecto 🎮  
+Este script recrea el juego **Pong** e incluye las siguientes características:  
+- **Importación de módulos:** `turtle`, `random`, `winsound`.  
+- **Identificación del ganador:** Determina el jugador que alcanza la puntuación objetivo.  
+- **Efectos de sonido:** Reproducción de sonidos en golpes y anotaciones.  
+- **Botón de pausa y salida:** Mejora la experiencia de juego.  
 
+---
 
-Algunos fragmentos que encontraremos en el codigo
+## Ejemplos del Código 🧩  
 
-
-Movimientos de las paletas
-
+### Movimientos de las paletas  
 ```python
+# Paleta izquierda
 def paleta_izquierda_up():
     y = left_padel.ycor()
     if y < 290:
-        left_padel.sety(y +20)
+        left_padel.sety(y + 20)
 
 def paleta_izquierda_down():
     y = left_padel.ycor()
     if y > -290:
-        left_padel.sety(y -20)         
+        left_padel.sety(y - 20)
 
-
-
-##  paleta derecha
-
+# Paleta derecha
 def paleta_derecha_up():
     y = right_padel.ycor()
     if y < 290:
-        right_padel.sety(y +20)
-
+        right_padel.sety(y + 20)
 
 def paleta_derecha_down():
     y = right_padel.ycor()
     if y > -290:
-        right_padel.sety(y -20)
-```
+        right_padel.sety(y - 20)
 
-Colision de bola con las palas
 
-```python
-#  # Creamos el rebote en las paletas
+# Rebote en las paletas
 
-      ## Paleta izquierda
-
+# Paleta izquierda
 if ball.xcor() < -390 and left_padel.ycor() - 60 < ball.ycor() < left_padel.ycor() + 60:
-          ball.setx(-390)
-          ball.dx *=-1
-          ball.dx *= 1.0
-          ball.dy *= 1.0
-          sonido_golpe()
+    ball.setx(-390)
+    ball.dx *= -1
+    ball.dx *= 1.0
+    ball.dy *= 1.0
+    sonido_golpe()
+``` 
+
+## Cómo Jugar 🕹️ 
+1. **Clona este repositorio**:
+ ```bash
+ git clone https://github.com/Lucas9113/Arcade-Pong-en-Python.git
+ ```
+2. **Instala las dependencia necesarias**:
+```bash
+pip install turtle
 ```
-
-Espero que ayude al que nesecite una ayuda/guia como asi tambien me digan si hay algo que corrgir para que quede mejor.
-
-Saludos!
-
-
+3. **Ejecuta el script**:
+```bash
+Python arcade_pong.py
+```
